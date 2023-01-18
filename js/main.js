@@ -1,16 +1,11 @@
-const owl = $(".owl-carousel");
-owl.owlCarousel({
-  center: true,
+new Swiper(".swiper", {
   loop: true,
-  margin: 30,
-  startPosition: 1,
-  items: 3,
-});
-
-$(".slider__btn--prev").click(function () {
-  owl.trigger("prev.owl.carousel", [300]);
-});
-
-$(".slider__btn--next").click(function () {
-  owl.trigger("next.owl.carousel");
+  navigation: {
+    nextEl: ".slider__btn--next",
+    prevEl: ".slider__btn--prev",
+  },
+  slidesPerView: 3,
+  spaceBetween: 30,
+  speed: 400,
+  slideNextClass: "swiper-slide-next",
 });
