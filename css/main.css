@@ -320,11 +320,11 @@ border-radius: 50px;
     transition: 200ms ease-in;
 }
 
- .swiper-slide-next .slider__item {
-    margin-top: 0;
-    width: 380px;
-    height: 456px;
-}
+ .destination__slider .center .slider__item {
+     margin-top: 0;
+     width: 380px;
+     height: 456px;
+ }
 
 .slider__btn {
     z-index: 2;

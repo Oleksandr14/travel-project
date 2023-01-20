@@ -7,7 +7,17 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -76,41 +86,20 @@
             </div>
 
             <div class="destination__slider">
-              <!-- Slider main container -->
-              <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <img
-                      class="slider__item"
-                      src="./img/slider/01.jpg"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      class="slider__item"
-                      src="./img/slider/02.jpg"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      class="slider__item"
-                      src="./img/slider/03.jpg"
-                      alt="img"
-                    />
-                  </div>
-                </div>
+             <div class="owl-carousel">
+                <img class="slider__item" src="./img/slider/01.jpg" alt="img" />
+                <img class="slider__item" src="./img/slider/02.jpg" alt="img" />
+                <img class="slider__item" src="./img/slider/03.jpg" alt="img" />
               </div>
-
               <button class="slider__btn slider__btn--prev">
                 <img src="./img/slider/arrow-left.svg" alt="arrow left" />
               </button>
               <button class="slider__btn slider__btn--next">
                 <img src="./img/slider/arrow-right.svg" alt="arrow right" />
               </button>
+            </div>
+
+              
             </div>
           </div>
         </div>
@@ -211,20 +200,19 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script>
-      new Swiper(".swiper", {
-        loop: true,
-        navigation: {
-          nextEl: ".slider__btn--next",
-          prevEl: ".slider__btn--prev",
-        },
-        slidesPerView: 3,
-        spaceBetween: 30,
-        speed: 400,
-        slideNextClass: "swiper-slide-next",
-      });
-    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js" type="module"></script>
   </body>
 </html>
